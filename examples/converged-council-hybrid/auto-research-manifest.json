@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "claims_evidence": "05_claims/claims-evidence.csv",
+    "contribution_plan": "03_contribution/contribution-plan.md",
+    "council_brief": "00_intake/council-brief.md",
+    "council_debate_log": "03_contribution/council-debate-log.md",
+    "experiment_plan": "04_experiments/experiment-plan.md",
+    "limitations": "09_submission/limitations.md",
+    "literature_matrix": "02_literature/literature-matrix.csv",
+    "literature_search_log": "02_literature/literature-search-log.md",
+    "paper": "06_paper/paper.tex",
+    "proposal_dossier": "03_contribution/proposal-dossier.md",
+    "proposal_scorecard": "03_contribution/proposal-scorecard.md",
+    "refs": "06_paper/refs.bib",
+    "reproducibility_statement": "09_submission/reproducibility-statement.md",
+    "research_brief": "00_intake/research-brief.md",
+    "research_questions": "01_questions/research-questions.md",
+    "results_ledger": "04_experiments/results-ledger.md",
+    "review_memo": "07_review/review-memo.md",
+    "review_packet": "07_review/review-packet.md",
+    "revision_ledger": "08_revision/revision-ledger.md",
+    "revision_plan": "08_revision/revision-plan.md",
+    "submission_checklist": "09_submission/submission-checklist.md"
+  },
+  "created_at": "2026-06-20T11:27:17.932965+00:00",
+  "mode": "hybrid",
+  "schema": "auto-research-workspace-v1",
+  "title": "Converged Council Hybrid Example"
+}

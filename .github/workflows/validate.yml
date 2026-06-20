@@ -1,0 +1,35 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate skill structure
+        run: python3 scripts/validate_skill_structure.py .
+
+      - name: Compile scripts
+        run: python3 -m py_compile scripts/*.py
+
+      - name: Check script help
+        run: |
+          for s in scripts/*.py; do
+            python3 "$s" --help >/tmp/auto-research-help.txt
+          done
+
+      - name: Validate bundled example
+        run: |
+          python3 scripts/validate_research_gates.py examples/converged-council-hybrid --mode hybrid
+          python3 scripts/build_review_packet.py examples/converged-council-hybrid
+

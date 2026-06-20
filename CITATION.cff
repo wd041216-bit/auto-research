@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Auto Research
+message: If Auto Research helps your work, please cite the repository.
+type: software
+authors:
+  - family-names: Dawei
+repository-code: https://github.com/wd041216-bit/auto-research
+abstract: Evidence-gated research workflows for AI agents, including proposal councils, literature triage, experiment planning, claim-evidence audits, review packets, and paper package templates.
+license: MIT
+version: 0.1.0
+date-released: "2026-06-20"
+

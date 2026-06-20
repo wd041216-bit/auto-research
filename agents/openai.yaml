@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto Research"
+  short_description: "Disciplined research-to-paper workflows"
+  default_prompt: "Use $auto-research to turn this research direction into a publication-quality paper package."
