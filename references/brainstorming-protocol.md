@@ -27,6 +27,13 @@ Turn a rough research direction into deliberate options before committing to a p
 6. Before finalizing a proposal or implementation path, confirm the route or label the output provisional.
 7. Self-review for blank markers, contradictions, scope drift, and ambiguous requirements.
 
+## Process Constraints
+
+- Brainstorming may produce options, not final claims.
+- Each route must include an evidence path and a failure mode.
+- Original or hybrid routes that survive brainstorming must still pass the Council Gate when it applies.
+- If the user asks for immediate finalization, provide a provisional route recommendation and name the missing gate.
+
 ## Blocking Gates
 
 - Do not collapse to one route before considering alternatives unless the user supplied a fully constrained direction.
@@ -39,4 +46,3 @@ Turn a rough research direction into deliberate options before committing to a p
 - Treating user excitement as evidence of feasibility.
 - Asking many questions that delay useful progress.
 - Skipping route comparison because one idea feels obvious.
-

@@ -38,6 +38,14 @@ Original: Abstract, Introduction, Related Work, Method, Experiments, Results, Di
 
 Hybrid: Abstract, Introduction, Literature Gap Analysis, Proposed Contribution, Experiment or Analysis, Results, Discussion, Limitations, Conclusion.
 
+## Process Constraints
+
+- Build prose from `claims-evidence.csv`; do not backfill the table after writing final sections.
+- Keep unsupported but useful ideas in notes, future work, or conjecture language.
+- Every central citation in the paper must resolve to a literature matrix row and verified or explicitly uncertain BibTeX metadata.
+- Figures and tables require provenance before they can be used as evidence.
+- If the evidence changes, revise the claim table before polishing prose.
+
 ## Blocking Gates
 
 - No final abstract or conclusion without claim-evidence mapping.
@@ -51,4 +59,3 @@ Hybrid: Abstract, Introduction, Literature Gap Analysis, Proposed Contribution, 
 - Overclaiming novelty.
 - Treating conjecture as evidence.
 - Writing polished prose before evidence is organized.
-

@@ -29,6 +29,14 @@ Simulate peer review, convert concerns into revisions, and close revisions with 
 6. After edits, update the revision ledger with changed artifact, summary, and verification.
 7. Re-run validators before marking concerns closed.
 
+## Process Constraints
+
+- Reviewer personas must be allowed to block acceptance, not only suggest improvements.
+- Each blocking concern must become a revision item, downgrade decision, or documented rejection rationale.
+- A revision closure must name the changed artifact and verification method.
+- Refresh the review packet after material changes to paper, claims, experiments, literature, limitations, or reproducibility.
+- Submission readiness is a gate decision, not a tone judgment.
+
 ## Blocking Gates
 
 - Submission-ready status requires review memo, revision plan, revision ledger, and submission checklist.
@@ -41,4 +49,3 @@ Simulate peer review, convert concerns into revisions, and close revisions with 
 - Treating a language edit as a methodological fix.
 - Closing all revisions without revalidating claims.
 - Ignoring reproducibility concerns because the paper reads well.
-

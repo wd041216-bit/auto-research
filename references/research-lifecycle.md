@@ -15,6 +15,7 @@ Define how `survey`, `original`, `hybrid`, and `iteration` runs move from idea t
 
 - Updated stage artifacts in the research workspace
 - Clear statement of current stage, next gate, and blocked artifacts
+- Gate decision using the format in `process-constraints.md`
 
 ## Procedure
 
@@ -22,10 +23,11 @@ Define how `survey`, `original`, `hybrid`, and `iteration` runs move from idea t
 2. Choose mode.
 3. Confirm or create a workspace.
 4. Start at the earliest incomplete required stage.
-5. Load the reference file for the current stage.
-6. Produce or revise the stage artifact.
-7. Run the validator for that artifact when available.
-8. Move forward only when the gate passes or the next output is explicitly provisional.
+5. Apply the Universal Stage Contract in `process-constraints.md`.
+6. Load the reference file for the current stage.
+7. Produce or revise the stage artifact.
+8. Run the validator for that artifact when available.
+9. Move forward only when the gate passes or the next output is explicitly provisional.
 
 Mode order:
 
@@ -46,6 +48,23 @@ Council states:
 - `checkpoint`: proposal may feed provisional planning only.
 - `blocked`: required source, dataset, user decision, or resource is missing.
 - `killed`: idea should be abandoned or redirected.
+
+## Stage Constraint Summary
+
+Use `process-constraints.md` as the full contract. This table is the lifecycle-level routing summary.
+
+| Stage | Must have before starting | Must not do | Exit gate |
+| --- | --- | --- | --- |
+| 0. Council | Rough original or hybrid direction | Treat council consensus as evidence | `converged`, `checkpoint`, `blocked`, or `killed` recorded |
+| 1. Intake | User request or existing package | Start downstream work without a brief | Complete research brief |
+| 2. Questions | Complete brief | Hide novelty or evaluation assumptions | Scoped questions with evidence paths |
+| 3. Literature Recall | Brief and questions | Treat memory as search | Search log with repeatable query records |
+| 4. Literature Triage | Search log and candidate papers | Cite unverified central sources as confirmed | Matrix rows scored and categorized |
+| 5. Contribution Plan | Questions, matrix, council output when required | Plan claims without evidence paths | Selected contribution and risks |
+| 6. Experiment / Analysis | Contribution plan | Choose metrics after seeing results | Plan and results ledger |
+| 7. Claims | Matrix and results as applicable | Put unmapped claims in final sections | Claims-evidence audit passes |
+| 8. Paper | Claims table and references | Write final prose from unsupported claims | Paper and refs complete or provisional |
+| 9. Review / Revision / Submission | Paper package | Say submission-ready before closure | Review, revisions, limitations, reproducibility, and checklist complete |
 
 ## Blocking Gates
 

@@ -33,6 +33,14 @@ Run a multi-role, adversarial, convergence-driven council for rough ideas that n
 5. The chair chooses exactly one state after each move: `continue-expand`, `continue-recombine`, `continue-sharpen`, `continue-red-team`, `continue-gap-fill`, `add-role`, `converged`, `checkpoint`, `blocked`, or `killed`.
 6. Use subagents for independent council groups when available. If not, run a simulated council and mark it in the debate log.
 
+## Process Constraints
+
+- Every role must have a mandate, acceptance criteria, and veto scope.
+- Every adaptive move must record the decision, open objections, and next action.
+- Gap-fill moves must name the specific missing literature, evaluation, reproducibility, venue, safety, or resource evidence.
+- Council outputs may select a research direction, but they do not prove empirical or literature-backed claims.
+- A checkpoint may feed only provisional planning until open objections are resolved.
+
 ## Convergence Conditions
 
 Declare `converged` only when all are true:
@@ -59,4 +67,3 @@ Declare `converged` only when all are true:
 - Letting advocates overrule unresolved reviewer or replication objections.
 - Treating Tier C inspiration as evidence.
 - Calling a checkpoint a final proposal.
-

@@ -15,6 +15,7 @@ Define blocking gates, warning gates, and claim downgrade rules for research art
 - Gate decision: pass, warning, or blocking
 - Missing artifact list
 - Required downgrade language when evidence is partial
+- Gate decision fields from `process-constraints.md`
 
 ## Procedure
 
@@ -23,6 +24,8 @@ Define blocking gates, warning gates, and claim downgrade rules for research art
 3. Check whether each artifact is complete rather than just initialized.
 4. Match each claim to one claim type.
 5. Downgrade unsupported claims or block final writing.
+
+Use `references/process-constraints.md` for the universal stage contract, evidence ID rules, status model, and downgrade wording.
 
 ## Claim Types
 
@@ -39,6 +42,7 @@ Define blocking gates, warning gates, and claim downgrade rules for research art
 
 - Missing required artifact.
 - Artifact still marked `Status: not-started`.
+- Artifact marked `draft`, `provisional`, `blocked`, or `superseded` when the downstream output needs completion.
 - Claim type missing.
 - Empirical claim without result evidence.
 - Literature-backed claim without literature IDs.
@@ -47,6 +51,20 @@ Define blocking gates, warning gates, and claim downgrade rules for research art
 - Final proposal dossier without council convergence.
 - Top-venue, novelty, SOTA, or benchmark-fit claim without current frontier grounding.
 - Council convergence while any blocking veto remains unresolved.
+
+## Gate Decision Constraints
+
+Use these decisions consistently:
+
+| Decision | Use when | Required response |
+| --- | --- | --- |
+| `advance` | Required artifacts are complete and validators pass | Name the next stage |
+| `advance-with-warning` | No blockers remain, but caveats or noncentral metadata issues exist | State warnings and allowed scope |
+| `provisional-only` | Useful work can continue but one or more upstream gates are incomplete | Label all output provisional and name missing gate |
+| `blocked` | A required artifact, evidence item, validator, user decision, or external asset is missing | Stop final output and list next action |
+| `killed` | Proposal or research direction fails integrity, feasibility, novelty, or safety constraints | Recommend abandon, redirect, or restart |
+
+Warnings never authorize final claims. A warning may narrow scope; a blocker stops advancement.
 
 ## Warning Gates
 

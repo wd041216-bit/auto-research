@@ -27,6 +27,14 @@ Define what must exist before a research package can be called submission-ready.
 5. Confirm review concerns are closed or explicitly deferred.
 6. Mark submission checklist complete only after validators pass.
 
+## Process Constraints
+
+- Submission-ready means gates passed, not that the draft is polished.
+- Deferred review concerns must be nonblocking or accompanied by an explicit downgrade.
+- Limitations must cover evidence, scope, external validity, unavailable assets, and known negative results.
+- Reproducibility must name code, data, environment, seeds, prompts, manual steps, and unavailable components.
+- Venue compliance may be claimed only after target venue requirements are checked.
+
 ## Blocking Gates
 
 - Missing claims-evidence table.
@@ -40,4 +48,3 @@ Define what must exist before a research package can be called submission-ready.
 - Calling a polished draft submission-ready.
 - Omitting limitations to sound stronger.
 - Leaving supplemental material implied but not packaged.
-

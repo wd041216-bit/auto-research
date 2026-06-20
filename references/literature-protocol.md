@@ -27,6 +27,14 @@ Make literature search auditable, fresh, and useful for writing rather than a ci
 8. For `must-cite` and `deep-discuss`, write a summary and relevance rationale.
 9. Verify venue metadata for central papers. Mark uncertainty instead of inventing accepted venues.
 
+## Process Constraints
+
+- Search breadth must cover concept, method, task or dataset, failure mode, and recent venue query families unless the brief makes a family irrelevant.
+- Every included paper must be traceable to a query, citation-chasing pass, supplied source, or user-provided corpus.
+- Central papers require source metadata; uncertain metadata must be marked, not guessed.
+- Exclusions must be recorded when they affect scope, novelty, or venue claims.
+- Literature triage supports related work and novelty framing; it does not substitute for experiments.
+
 ## Literature Quality Score
 
 | Field | Meaning |
@@ -50,4 +58,3 @@ Make literature search auditable, fresh, and useful for writing rather than a ci
 - Adding citations without explaining why they matter.
 - Keeping outdated arXiv metadata when a paper has an accepted venue.
 - Omitting negative or contrary literature.
-

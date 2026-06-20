@@ -17,9 +17,10 @@ Core rule: no final research claim without traceable evidence.
 2. Identify the mode: `survey`, `original`, `hybrid`, or `iteration`.
 3. Locate or create a research workspace. To create one, run `scripts/init_research_workspace.py`.
 4. Read `references/research-lifecycle.md` before choosing stage order.
-5. Read the reference file for the current stage before writing artifacts.
-6. Run the relevant validator before claiming a gate is satisfied.
-7. Mark incomplete outputs as provisional; do not use final-paper confidence language before gates pass.
+5. Read `references/process-constraints.md` for the current stage and cross-stage process constraints.
+6. Read the reference file for the current stage before writing artifacts.
+7. Run the relevant validator before claiming a gate is satisfied.
+8. Mark incomplete outputs as provisional; do not use final-paper confidence language before gates pass.
 
 ## Mode Selection
 
@@ -60,6 +61,7 @@ These gates are mandatory:
 - No empirical conclusion without a prior `04_experiments/experiment-plan.md` and `04_experiments/results-ledger.md`.
 - No abstract, introduction, discussion, or conclusion claim unless it appears in `05_claims/claims-evidence.csv`.
 - No submission-ready claim without `07_review/review-memo.md`, `08_revision/revision-plan.md`, `08_revision/revision-ledger.md`, and `09_submission/submission-checklist.md`.
+- No stage may advance unless the applicable contract in `references/process-constraints.md` is satisfied or the output is explicitly labeled provisional or blocked.
 
 When a gate is missing, name the missing artifact and offer a provisional output or the next gate-satisfying step.
 
@@ -89,6 +91,7 @@ Read only the reference files needed for the current stage:
 - Proposal maturity scoring: `references/proposal-maturity-rubric.md`
 - Proposal dossier structure: `references/proposal-output-contract.md`
 - Lifecycle and mode control: `references/research-lifecycle.md`
+- Stage contracts, process constraints, evidence ID rules, status model, and downgrade rules: `references/process-constraints.md`
 - Literature search, recall, scoring, triage, citation freshness: `references/literature-protocol.md`
 - Experiment design, baselines, metrics, results ledger: `references/experiment-protocol.md`
 - Paper structure, wording gates, LaTeX/BibTeX standards: `references/writing-protocol.md`

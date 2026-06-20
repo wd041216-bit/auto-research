@@ -22,6 +22,14 @@ Prevent fabricated references and stale metadata.
 5. For arXiv preprints, check whether an accepted venue exists before central citation use.
 6. Never fabricate citations, venues, DOIs, author lists, years, or titles.
 
+## Process Constraints
+
+- Prefer primary sources for central claims; secondary indexes may help locate but not replace missing primary metadata when precision matters.
+- Record uncertainty in `metadata_status`, `venue_verified`, or notes.
+- If current venue or version status may have changed, verify before making final claims.
+- Supplied PDFs or local files still require enough metadata to cite or must remain provisional.
+- Failed verification is a result: record it and downgrade citation use.
+
 ## Blocking Gates
 
 - Unverified central references cannot be `must-cite`.
@@ -33,4 +41,3 @@ Prevent fabricated references and stale metadata.
 - Relying on memory for a paper's accepted venue.
 - Assuming arXiv version equals final publication.
 - Creating plausible BibTeX without source metadata.
-

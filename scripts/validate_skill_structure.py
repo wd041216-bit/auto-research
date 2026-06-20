@@ -23,11 +23,39 @@ REQUIRED_REFERENCES = [
     "experiment-protocol.md",
     "literature-protocol.md",
     "pressure-tests.md",
+    "process-constraints.md",
     "proposal-maturity-rubric.md",
     "proposal-output-contract.md",
     "quality-rubrics.md",
     "research-council-protocol.md",
     "research-lifecycle.md",
+    "review-protocol.md",
+    "source-verification.md",
+    "submission-package.md",
+    "writing-protocol.md",
+]
+
+REQUIRED_PROCESS_CONSTRAINT_HEADINGS = [
+    "## Universal Stage Contract",
+    "## Global Invariants",
+    "## Status Model",
+    "## Evidence ID Rules",
+    "## Stage Constraints",
+    "### Stage 0: Proposal / Council Gate",
+    "### Stage 9: Peer Review, Revision, And Submission",
+    "## Process Constraints",
+    "### Mode Selection",
+    "### Claim-Evidence Mapping",
+    "## Downgrade Rules",
+    "## Gate Decision Format",
+]
+
+PROCESS_CONSTRAINT_REFERENCES = [
+    "brainstorming-protocol.md",
+    "experiment-protocol.md",
+    "literature-protocol.md",
+    "proposal-output-contract.md",
+    "research-council-protocol.md",
     "review-protocol.md",
     "source-verification.md",
     "submission-package.md",
@@ -107,6 +135,18 @@ def main() -> int:
         elif len(path.read_text(encoding="utf-8").strip().split()) < 40:
             blocking.append(f"reference looks too small: references/{reference}")
 
+    process_constraints = repo / "references" / "process-constraints.md"
+    if process_constraints.exists():
+        process_text = process_constraints.read_text(encoding="utf-8")
+        for heading in REQUIRED_PROCESS_CONSTRAINT_HEADINGS:
+            if heading not in process_text:
+                blocking.append(f"process constraints missing heading: {heading}")
+
+    for reference in PROCESS_CONSTRAINT_REFERENCES:
+        path = repo / "references" / reference
+        if path.exists() and "## Process Constraints" not in path.read_text(encoding="utf-8"):
+            blocking.append(f"reference missing Process Constraints section: references/{reference}")
+
     for template in REQUIRED_TEMPLATE_FILES:
         path = repo / "assets" / "research-workspace" / template
         if not path.exists():
@@ -123,4 +163,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

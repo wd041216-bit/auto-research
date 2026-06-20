@@ -27,6 +27,14 @@ Design and record experiments, analyses, case studies, or theoretical checks bef
 8. Record negative and inconclusive results.
 9. Do not rewrite the original hypothesis to fit observed results. Add a new follow-up hypothesis instead.
 
+## Process Constraints
+
+- Freeze hypotheses, metrics, baselines, controls, and invalidation criteria before interpreting results.
+- Record model versions, prompt versions, datasets, seeds, hardware, scripts, and manual steps when they affect reproducibility.
+- A result without an artifact path or explicit evidence location cannot support a final claim.
+- Negative, failed, and inconclusive runs must stay in the ledger when they affect interpretation or limitations.
+- Exploratory findings require new follow-up hypotheses rather than retroactive edits to the original plan.
+
 ## Blocking Gates
 
 - Empirical claims require a prior experiment plan.
@@ -41,4 +49,3 @@ Design and record experiments, analyses, case studies, or theoretical checks bef
 - Hiding negative results.
 - Reporting percentage gains without denominators or baselines.
 - Using model-generated estimates as empirical measurements.
-

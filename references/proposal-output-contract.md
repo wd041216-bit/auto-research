@@ -40,6 +40,14 @@ Use this thesis form:
 We propose <method/system/study> to solve <bottleneck> by <mechanism>, evaluated through <evidence plan>, targeting <venue/community>.
 ```
 
+## Process Constraints
+
+- `Convergence status` controls allowed language: only `converged` may be packaged as final.
+- `checkpoint`, `blocked`, and `killed` dossiers must include continuation state and may not imply readiness.
+- Related-work contrast must cite literature rows or mark items as `to verify`.
+- Risk register and kill criteria are required even when the proposal is strong.
+- Venue positioning must name reviewer expectations, not just venue prestige.
+
 ## Blocking Gates
 
 - A final dossier requires `Convergence status: converged`.
@@ -53,4 +61,3 @@ We propose <method/system/study> to solve <bottleneck> by <mechanism>, evaluated
 - Hiding objections to make the idea look stronger.
 - Naming top venues without reviewer expectation analysis.
 - Writing a final proposal when the council is still checkpointed.
-
